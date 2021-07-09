@@ -2,7 +2,6 @@
   <section class="home-page">
     <header class="home-page__header">
       <h1 class="home-page__main-title">{{ mainTitle }}</h1>
-      <div class="home-page__authors">Author: <a target="_blanc" href="https://artemshar.space">Artem Shar</a></div>
     </header>
     <p>{{ summaryMessage }}</p>
     <a :href="$withBase('/frontend')" class="home-page__explore">Explore 🗺️</a>
@@ -11,13 +10,13 @@
     <br>
     <img class="home-page__logo" src="https://cdn.dribbble.com/users/88966/screenshots/1062196/environment.png"/>
     <br>
-    <br>
     <div class="home-page__datetime">
       <div class="home-page__datetime__time">{{ time }}</div>
       <div class="home-page__datetime__date">{{ date }}</div>
     </div>
     <br>
     <br>
+    <div class="home-page__authors">Authors: <br> <a target="_blanc" href="https://artemshar.space">Artem Shar</a>, maybe you? </div>
   </section>
 </template>
 
