@@ -28,7 +28,7 @@
     data() {
       return {
         mainTitle: 'Frontend notebook',
-        summaryMessage: `Frontend notebook is the personal public knowledge database and blog about Software Engineering, Web-technologies and related areas, such as design, API, management, wellness in IT, etc.`,
+        summaryMessage: `Frontend notebook is the personal public knowledge database and blog about Frontend / Web Development, Internet technologies and related areas, such as design, API, IT-management, etc.`,
         date: '',
         time: ''
       }

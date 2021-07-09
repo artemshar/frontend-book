@@ -27,11 +27,10 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   dest: 'dist',
+  base: '/frontend-book/',
   themeConfig: {
-    base: '/frontend-book/',
     repo: 'https://github.com/artemshar/frontend-book',
     editLinks: true,
-    docsDir: '',
     editLinkText: '',
     lastUpdated: true,
     nav: [
@@ -42,10 +41,6 @@ module.exports = {
       {
         text: 'React',
         link: '/react/'
-      },
-      {
-        text: 'GitHub',
-        link: 'https://github.com/artemshar/frontend-book'
       }
     ],
     sidebar: {
