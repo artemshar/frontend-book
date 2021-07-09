@@ -27,6 +27,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    base: '/frontend_book/',
     repo: '',
     editLinks: true,
     docsDir: '',
