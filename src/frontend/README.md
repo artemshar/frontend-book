@@ -1,6 +1,6 @@
 # About the project
 
-**Frontend notebook** is the personal public knowledge database and blog about Frontend / Web Development, Internet technologies and related areas, such as design, API, IT-management, etc.
+<ProjectDescription/>
 
 ## All pages
 

@@ -22,13 +22,15 @@
 </template>
 
 <script>
+  const { description } = require('../../../package');
+  
   import SearchBox from '@SearchBox'
   
   export default {
     data() {
       return {
         mainTitle: 'Frontend notebook',
-        summaryMessage: `Frontend notebook is the personal public knowledge database and blog about Frontend / Web Development, Internet technologies and related areas, such as design, API, IT-management, etc.`,
+        summaryMessage: description,
         date: '',
         time: ''
       }
