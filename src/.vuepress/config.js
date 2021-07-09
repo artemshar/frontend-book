@@ -75,6 +75,15 @@ module.exports = {
           ]
         },
       ],
+      '/git/': [
+        {
+          title: 'GIT',
+          collapsable: false,
+          children: [
+            '',
+          ]
+        },
+      ],
     }
   },
 
