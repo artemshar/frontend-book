@@ -5,7 +5,7 @@
       <div class="home-page__authors">Author: <a target="_blanc" href="https://artemshar.space">Artem Shar</a></div>
     </header>
     <p>{{ summaryMessage }}</p>
-    <a href="/frontend" class="home-page__explore">Explore 🗺️</a>
+    <a :href="$withBase('/frontend')" class="home-page__explore">Explore 🗺️</a>
     <div class="home-page__search-box"><SearchBox/></div>
     <br>
     <br>
