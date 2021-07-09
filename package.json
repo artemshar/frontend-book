@@ -1,0 +1,19 @@
+{
+  "name": "frontend_notebook",
+  "version": "0.0.1",
+  "description": "Frontend notebook is the personal public knowledge database and blog about Software Engineering, Web-technologies and related areas, such as design, API, management, wellness in IT, etc.",
+  "main": "index.js",
+  "authors": {
+    "name": "Artem Shar",
+    "email": "artemrandom@ya.ru"
+  },
+  "repository": "https://github.com/artemshar/frontend-book.git/frontend_book",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
