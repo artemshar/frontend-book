@@ -30,6 +30,7 @@ module.exports = {
   base: '/frontend-book/',
   themeConfig: {
     repo: 'https://github.com/artemshar/frontend-book',
+    docsDir: 'src',
     editLinks: true,
     editLinkText: '',
     lastUpdated: true,
