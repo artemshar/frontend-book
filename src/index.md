@@ -22,4 +22,3 @@ footer: Made by Artem Shar with 🖤
 ---
 
 <HomePage/>
-

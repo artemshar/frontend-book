@@ -7,7 +7,7 @@
     "name": "Artem Shar",
     "email": "artemrandom@ya.ru"
   },
-  "repository": "https://github.com/artemshar/frontend-book.git/frontend_book",
+  "repository": "https://github.com/artemshar/frontend-book",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"

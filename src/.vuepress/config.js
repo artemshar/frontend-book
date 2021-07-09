@@ -26,10 +26,10 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
-  dest: 'docs',
+  dest: 'dist',
   themeConfig: {
-    base: '/frontend_book/',
-    repo: '',
+    base: '/frontend-book/',
+    repo: 'https://github.com/artemshar/frontend-book',
     editLinks: true,
     docsDir: '',
     editLinkText: '',
