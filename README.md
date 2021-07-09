@@ -1,2 +1,2 @@
-# frontend-book
+# Frontend-book
 The book with posts about Frontend technologies, examples, thoughts and related topics
