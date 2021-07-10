@@ -42,6 +42,10 @@ module.exports = {
       {
         text: 'React',
         link: '/react/'
+      },
+      {
+        text: 'GIT',
+        link: '/git/'
       }
     ],
     sidebar: {

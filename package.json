@@ -1,7 +1,7 @@
 {
   "name": "frontend_notebook",
   "version": "0.0.1",
-  "description": "Frontend notebook is the personal public knowledge database and blog about Frontend / Web Development, Internet technologies and related areas, such as design, API, IT-management, etc.",
+  "description": "Personal public knowledge database and blog about Frontend / Web Development, Internet technologies and related topics, such as design, UX/UI, API, IT-management, etc.",
   "main": "index.js",
   "authors": {
     "name": "Artem Shar",

@@ -1,12 +1,13 @@
 # About the project
 
-<ProjectDescription/>
+**Frontend notebook** is the <ProjectDescription/>
 
 ## All pages
 
 * [Frontend](/frontend/)
 * [JavaScript](/javascript/)
 * [React](/react/)
+* [Git](/git/)
 
 
 ## Philosophy
