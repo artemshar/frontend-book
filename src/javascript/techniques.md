@@ -5,7 +5,7 @@
 
 Throttling is a technique with an artificial restriction on an event or function, so that it is executed no more often than in a given period of time.
 
-```
+``` javascript
 function throttle (func, ms) {
   let isThrottled = false;
   let savedArgs;
@@ -55,7 +55,7 @@ Debouncing functions means that all calls will be ignored until they stop for a 
 
 A debounce is a higher-order function, which is a function that returns another function (named executedFunction here for clarity). This is done to form a closure around the func and wait function parameters and the timeout variable so that their values are preserved.
 
-```
+``` javascript
 function debounce (func, ms) {
   let timeout;
 
@@ -84,7 +84,7 @@ function debounce (func, ms) {
 A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables — a scope chain. A closure is the combination of a function and the lexical environment within which that function was declared.
 
 **Example**
-```
+``` javascript
 function makeAdder(x) { // makeAdder is a function factory
   return function(y) {
     return x + y;
