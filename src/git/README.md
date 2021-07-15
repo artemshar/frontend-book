@@ -1,4 +1,4 @@
-# GIT
+# Summary of the GIT
 
 ### How to Delete a Git Branch Both Locally and Remotely
 

@@ -36,6 +36,10 @@ module.exports = {
     lastUpdated: true,
     nav: [
       {
+        text: 'Design, UX/UI',
+        link: '/design/',
+      },
+      {
         text: 'JavaScript',
         link: '/javascript/',
       },
@@ -49,6 +53,17 @@ module.exports = {
       }
     ],
     sidebar: {
+      '/design/': [
+        {
+          title: 'Design, UX/UI',
+          collapsable: false,
+          children: [
+            '',
+            'glossary',
+            'design_systems'
+          ]
+        },
+      ],
       '/frontend/': [
         {
           title: 'Frontend',

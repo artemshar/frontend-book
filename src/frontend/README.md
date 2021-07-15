@@ -1,9 +1,10 @@
-# About the project
+# Summary of the Frontend book
 
 **Frontend notebook** is the <ProjectDescription/>
 
 ## All pages
 
+* [Design](/design)
 * [Frontend](/frontend/)
 * [JavaScript](/javascript/)
 * [React](/react/)

@@ -1,4 +1,4 @@
-# About JavaScript
+# Summary of the JavaScript
 
 * [JavaScript - wiki](https://en.wikipedia.org/wiki/JavaScript)
 
