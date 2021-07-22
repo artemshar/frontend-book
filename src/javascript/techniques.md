@@ -104,4 +104,5 @@ In essence, makeAdder is a function factory. It creates functions that can add a
 
 add5 and add10 are both closures. They share the same function body definition, but store different lexical environments. In add5's lexical environment, x is 5, while in the lexical environment for add10, x is 10.
 
+
 * [MDN / Closures](https://developer.mozilla.org/en/docs/Web/JavaScript/Closures)

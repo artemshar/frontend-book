@@ -9,7 +9,7 @@ The following example demonstrates several things:
 2. That a class with a static member can be sub-classed.
 3. How a static member can and cannot be called.
 
-```JavaScript
+``` JavaScript
 class Triple {
   static customName = 'Tripler';
   static description = 'I triple any number you provide';
