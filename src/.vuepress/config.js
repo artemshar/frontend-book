@@ -81,6 +81,7 @@ module.exports = {
           children: [
             '',
             'ui-libs',
+            'state-management',
           ]
         },
       ],
