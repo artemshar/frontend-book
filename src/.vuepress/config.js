@@ -92,7 +92,8 @@ module.exports = {
           children: [
             '',
             'techniques',
-            'memory_management'
+            'memory_management',
+            'classes'
           ]
         },
       ],
