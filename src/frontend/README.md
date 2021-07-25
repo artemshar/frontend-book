@@ -4,7 +4,7 @@
 
 ## All pages
 
-* [Design](/design)
+* [Design](/design/)
 * [Frontend](/frontend/)
 * [JavaScript](/javascript/)
 * [React](/react/)
