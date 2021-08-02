@@ -60,7 +60,8 @@ module.exports = {
           children: [
             '',
             'glossary',
-            'design_systems'
+            'design_systems',
+            'methodologies'
           ]
         },
       ],
