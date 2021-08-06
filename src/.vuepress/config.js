@@ -55,13 +55,14 @@ module.exports = {
     sidebar: {
       '/design/': [
         {
-          title: 'Design, UX/UI',
+          title: 'Design, UX/UI, motion',
           collapsable: false,
           children: [
             '',
             'glossary',
             'design_systems',
-            'methodologies'
+            'methodologies',
+            'animations'
           ]
         },
       ],

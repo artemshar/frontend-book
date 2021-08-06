@@ -4,8 +4,8 @@
 
 ## All pages
 
-* [Design](/design/)
-* [Frontend](/frontend/)
+* [This](/frontend/)
+* [Design, UX/UI, Motion](/design/)
 * [JavaScript](/javascript/)
 * [React](/react/)
 * [Git](/git/)
