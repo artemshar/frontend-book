@@ -62,7 +62,8 @@ module.exports = {
             'glossary',
             'design_systems',
             'methodologies',
-            'animations'
+            'animations',
+            'mobile'
           ]
         },
       ],
