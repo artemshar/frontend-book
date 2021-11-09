@@ -50,6 +50,10 @@ module.exports = {
       {
         text: 'GIT',
         link: '/git/'
+      },
+      {
+        text: 'General',
+        link: '/general/'
       }
     ],
     sidebar: {
@@ -103,6 +107,15 @@ module.exports = {
       '/git/': [
         {
           title: 'GIT',
+          collapsable: false,
+          children: [
+            '',
+          ]
+        },
+      ],
+      '/general/': [
+        {
+          title: 'General',
           collapsable: false,
           children: [
             '',
