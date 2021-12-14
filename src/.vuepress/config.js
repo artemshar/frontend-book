@@ -89,6 +89,7 @@ module.exports = {
             '',
             'ui-libs',
             'state-management',
+            'hooks',
           ]
         },
       ],
