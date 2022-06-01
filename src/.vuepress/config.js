@@ -36,6 +36,10 @@ module.exports = {
     lastUpdated: true,
     nav: [
       {
+        text: 'CS',
+        link: '/CS/',
+      },
+      {
         text: 'Design, UX/UI',
         link: '/design/',
       },
@@ -57,6 +61,15 @@ module.exports = {
       }
     ],
     sidebar: {
+      '/CS/': [
+        {
+          title: 'Computer Science',
+          collapsable: false,
+          children: [
+            ''
+          ]
+        },
+      ],
       '/design/': [
         {
           title: 'Design, UX/UI, motion',
