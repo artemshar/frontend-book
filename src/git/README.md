@@ -30,3 +30,14 @@ git reflog
 git only garbage collects after about a month or so unless you explicitly tell it to remove newer blobs.
 
 [https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1](https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1#:~:text=%2D%2Dhard%20discards%20uncommitted%20changes,to%20restore%20them%20through%20git.)
+
+
+### How to get your current git user.name & user.email
+
+```
+git config --global user.name 
+git config --global user.email
+// or for local
+git config user.name
+git config user.email
+```
