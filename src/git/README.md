@@ -32,12 +32,22 @@ git only garbage collects after about a month or so unless you explicitly tell i
 [https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1](https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1#:~:text=%2D%2Dhard%20discards%20uncommitted%20changes,to%20restore%20them%20through%20git.)
 
 
-### How to get your current git user.name & user.email
+### How to see curent git config name & email
 
+#### Global
 ```
 git config --global user.name 
 git config --global user.email
-// or for local
+```
+
+#### Local
+```
 git config user.name
 git config user.email
+```
+
+### How to update git config (name & email) in last commit
+
+```
+git commit --amend --author="Author Name <email@address.com>"
 ```
