@@ -66,7 +66,7 @@ module.exports = {
           title: 'Computer Science',
           collapsable: false,
           children: [
-            ''
+            'design_principles'
           ]
         },
       ],
