@@ -3,8 +3,8 @@
 ## SOLID
 
 **Sources**
-- https://en.wikipedia.org/wiki/SOLID
-- http://principles-wiki.net/collections:robert_c._martin_s_principle_collection
+- [en.wikipedia.org/wiki/SOLID](https://en.wikipedia.org/wiki/SOLID)
+- [principles-wiki.net/collections:robert_c._martin_s_principle_collection](http://principles-wiki.net/collections:robert_c._martin_s_principle_collection)
 
 ### Single-responsibility principle (SRP)
 
@@ -49,7 +49,8 @@ Pattern "Facade".
  
 <br>
 Example in JavaScript:
-```javascript
+
+```
 //Bad
 
 class UserSettings {

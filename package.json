@@ -1,7 +1,7 @@
 {
   "name": "frontend_notebook",
-  "version": "0.0.1",
-  "description": "Personal public notebook and blog about Frontend, Design, UX/UI, Backend, Computer Science, IT management, etc.",
+  "version": "0.0.2",
+  "description": "Personal public notebook about Software Development, Frontend, Design, UX/UI, Computer Science, IT management, etc.",
   "main": "index.js",
   "authors": {
     "name": "Artem Shar",

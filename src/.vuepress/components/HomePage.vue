@@ -16,7 +16,7 @@
     </div>
     <br>
     <br>
-    <div class="home-page__authors">Authors: <a target="_blanc" href="https://artemshar.space">Artem Shar</a>, you? </div>
+    <div class="home-page__authors">Author: <a target="_blanc" href="https://artemshar.space">Artem Shar</a></div>
   </section>
 </template>
 

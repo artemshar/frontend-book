@@ -5,13 +5,14 @@
 ## All pages
 
 * [This](/frontend/)
+* [Computer Science](/CS/)
 * [Design, UX/UI, Motion](/design/)
 * [JavaScript](/javascript/)
 * [React](/react/)
 * [Git](/git/)
+* [Hacker tips 😃](/hacker/)
 
 
 ## Philosophy
 
-Bla bla bla
-
+Make some of my notes public. The artifact may or may not be useful, but the process itself is more important.

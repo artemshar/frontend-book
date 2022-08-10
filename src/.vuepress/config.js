@@ -32,7 +32,7 @@ module.exports = {
     repo: 'https://github.com/artemshar/frontend-book',
     docsDir: 'src',
     editLinks: true,
-    editLinkText: '',
+    editLinkText: 'Edit',
     lastUpdated: true,
     nav: [
       {
@@ -56,8 +56,8 @@ module.exports = {
         link: '/git/'
       },
       {
-        text: 'General',
-        link: '/general/'
+        text: 'Hacker tips 😃',
+        link: '/hacker/'
       }
     ],
     sidebar: {
@@ -127,9 +127,9 @@ module.exports = {
           ]
         },
       ],
-      '/general/': [
+      '/hacker/': [
         {
-          title: 'General',
+          title: 'Hacker tips 😃',
           collapsable: false,
           children: [
             '',

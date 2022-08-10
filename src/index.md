@@ -16,7 +16,7 @@ features:
 - title: Performance
   details: The speed of websites and web applications
 - title: Security
-  details: Security in browsers and web-applications
+  details: Security in browsers and web-applications 
 
 footer: Made by Artem Shar with 🖤
 ---
