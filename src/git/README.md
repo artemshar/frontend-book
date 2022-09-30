@@ -31,6 +31,22 @@ git only garbage collects after about a month or so unless you explicitly tell i
 
 [https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1](https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1#:~:text=%2D%2Dhard%20discards%20uncommitted%20changes,to%20restore%20them%20through%20git.)
 
+### Open global git config
+```git config --list``` or ```cat ~/.gitconfig```
+
+### Git rebase & squash
+
+1. See git log, e.g. ```git log --graph --oneline``` or ```git log -5``` 
+2. ``` git rebase -i [commit id] ```
+3. Edit: 
+- first commit ```pick ...```
+- second commit ```s``` or ```squash```
+- next commit ```s``` or ```squash```
+- etc.
+4. Rename final commit message and save
+5. ```git push --force``` if you already pushed commits
+
+
 
 ### How to see curent git config name & email
 
