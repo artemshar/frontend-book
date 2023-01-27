@@ -1,6 +1,6 @@
 # Summary of the GIT
 
-### How to Delete a Git Branch Both Locally and Remotely
+## Delete a git branch both locally and remotely
 
 ```
 // delete branch locally
@@ -10,7 +10,7 @@ git branch -d localBranchName
 git push origin --delete remoteBranchName
 ```
 
-### How to Reset last commit
+## Reset last commit --soft HEAD~1
 
 [https://www.git-tower.com/learn/git/faq/undo-last-commit/](https://www.git-tower.com/learn/git/faq/undo-last-commit/)
 
@@ -20,7 +20,7 @@ git reset --soft HEAD~1
 
 Note the --soft flag: this makes sure that the changes in undone revisions are preserved. After running the command, you'll find the changes as uncommitted local modifications in your working copy.
 
-### If you lost your changes
+## If you lost your changes
 
 
 Try to find your HEAD with:
@@ -31,10 +31,10 @@ git only garbage collects after about a month or so unless you explicitly tell i
 
 [https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1](https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1#:~:text=%2D%2Dhard%20discards%20uncommitted%20changes,to%20restore%20them%20through%20git.)
 
-### Open global git config
+## Open global .gitconfig
 ```git config --list``` or ```cat ~/.gitconfig```
 
-### Git rebase & squash
+## Rebase & Squash
 
 1. See git log, e.g. ```git log --graph --oneline``` or ```git log -5``` 
 2. ``` git rebase -i [commit id] ```
@@ -48,22 +48,35 @@ git only garbage collects after about a month or so unless you explicitly tell i
 
 
 
-### How to see curent git config name & email
+## Check curent name & email in git config
 
-#### Global
+### Global
 ```
 git config --global user.name 
 git config --global user.email
 ```
 
-#### Local
+### Local
 ```
 git config user.name
 git config user.email
 ```
 
-### How to update git config (name & email) in last commit
+## Update name & email in a last commit
 
 ```
 git commit --amend --author="Author Name <email@address.com>"
+```
+
+## Alias
+
+E.g. global, in ```~/.gitconfig``` file:
+```
+
+[alias]
+        st = status
+        co = checkout
+        br = branch
+        logg = log --graph --oneline
+        rup = remote update --prune
 ```
