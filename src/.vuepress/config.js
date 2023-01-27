@@ -1,10 +1,10 @@
-const { description } = require('../../package')
+const { description, name } = require('../../package')
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Frontend notebook',
+  title: name,
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -35,6 +35,10 @@ module.exports = {
     editLinkText: 'Edit',
     lastUpdated: true,
     nav: [
+      {
+        text: 'Front-End',
+        link: '/frontend/',
+      },
       {
         text: 'CS',
         link: '/CS/',
@@ -78,7 +82,6 @@ module.exports = {
             '',
             'glossary',
             'design_systems',
-            'methodologies',
             'animations',
             'mobile'
           ]
@@ -90,7 +93,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'frontend'
+            'architecture'
           ]
         },
       ],

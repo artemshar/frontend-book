@@ -1,11 +1,11 @@
 {
   "name": "frontend_notebook",
   "version": "0.0.2",
-  "description": "Personal public notebook about Software Development, Frontend, Design, UX/UI, Computer Science, IT management, etc.",
+  "description": "Ths is public notebook about technologies in Software Development, on the subjects of design, computer science, APIs, etc.",
   "main": "index.js",
   "authors": {
     "name": "Artem Shar",
-    "email": "artemrandom@ya.ru"
+    "email": "artem.ude@gmail.com"
   },
   "repository": "https://github.com/artemshar/frontend-book",
   "scripts": {

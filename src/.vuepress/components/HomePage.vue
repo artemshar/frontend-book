@@ -3,8 +3,8 @@
     <header class="home-page__header">
       <h1 class="home-page__main-title">{{ mainTitle }}</h1>
     </header>
-    <p>{{ summaryMessage }}</p>
-    <a :href="$withBase('/frontend')" class="home-page__explore">Explore 🗺️</a>
+    <p class="home-page__summary-message">{{ summaryMessage }}</p>
+    <!-- <a :href="$withBase('/frontend')" class="home-page__explore">Explore Front-End🗺️</a> -->
     <div class="home-page__search-box"><SearchBox/></div>
     <br>
     <br>
@@ -21,14 +21,14 @@
 </template>
 
 <script>
-  const { description } = require('../../../package');
+  const { description, name } = require('../../../package');
   
   import SearchBox from '@SearchBox'
   
   export default {
     data() {
       return {
-        mainTitle: 'Frontend notebook',
+        mainTitle: name,
         summaryMessage: description,
         date: '',
         time: ''

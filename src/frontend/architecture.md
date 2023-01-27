@@ -1,4 +1,18 @@
-# Methodologies
+# Architectures
+
+Methodologies of Frontend architectures
+
+## Classic (without architecture)
+
+### Folders
+
+* pages
+* components
+* api
+* helpers
+* store
+* hooks
+* assets
 
 ## Atomic design
 
@@ -13,8 +27,24 @@ Atomic design is methodology for creating design systems. There are five distinc
 4. Templates
 5. Pages
 
+## Modular architecture
+
+### Folders
+
+* pages
+* modules
+  * moduleName
+    * api
+    * components
+    * const
+    * helpers
+    * store
+    index.ts
+* components
+* UI
 
 ## Feature-sliced
 [https://feature-sliced.design/](https://feature-sliced.design/)
 
 A methodology for designing frontend projects aimed at separating an application according to business logic and areas of responsibility.
+

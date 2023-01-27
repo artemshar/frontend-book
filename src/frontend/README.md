@@ -1,18 +1,15 @@
-# Summary of the Frontend book
+# General
 
-**Frontend notebook** is the <ProjectDescription/>
+All topics related in Front-End development and engineering
 
-## All pages
+* [Front-end web development - wiki](https://en.wikipedia.org/wiki/Front-end_web_development)
 
-* [This](/frontend/)
-* [Computer Science](/CS/)
-* [Design, UX/UI, Motion](/design/)
-* [JavaScript](/javascript/)
-* [React](/react/)
-* [Git](/git/)
-* [Hacker tips 😃](/hacker/)
+### Philosophy
+> I do some of my notes public. The artifact may be useful or not for you, but anyway I know where to find some repeated things.
 
+## Guides and skills maps
 
-## Philosophy
+### Frontend Developer roadmap
 
-Make some of my notes public. The artifact may or may not be useful, but the process itself is more important.
+Step by step guide to becoming a modern frontend developer in 2023
+[Frontend Developer](https://roadmap.sh/frontend)

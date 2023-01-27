@@ -1,7 +1,7 @@
 ---
 home: false
 heroImage: https://cdn.dribbble.com/users/88966/screenshots/1062196/environment.png
-tagline: Frontend notebook is the personal public knowledge database and blog about Frontend / Web Development, Internet technologies and related areas, such as design, API, IT-management, etc.
+tagline: Ths is public notebook about technologies in Software Development, on the subjects of design, computer science, APIs, etc.
 actionText: Explore →
 actionLink: /frontend/
 features:
