@@ -103,6 +103,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
+            'commoon',
             'ui-libs',
             'state-management',
             'hooks',
