@@ -4,3 +4,12 @@
 ``` PowerShell
 Get-NetIPAddress -AddressFamily IPV4
 ```
+
+
+## Bash 
+
+### How to know a folder size
+
+```bash
+du -hs /mnt/d/foldername
+```
