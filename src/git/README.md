@@ -31,9 +31,6 @@ git only garbage collects after about a month or so unless you explicitly tell i
 
 [https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1](https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1#:~:text=%2D%2Dhard%20discards%20uncommitted%20changes,to%20restore%20them%20through%20git.)
 
-## Open global .gitconfig
-```git config --list``` or ```cat ~/.gitconfig```
-
 ## Rebase & Squash
 
 1. See git log, e.g. ```git log --graph --oneline``` or ```git log -5``` 
@@ -46,8 +43,10 @@ git only garbage collects after about a month or so unless you explicitly tell i
 4. Rename final commit message and save
 5. ```git push --force``` if you already pushed commits
 
+## .gitconfig
+```git config --list``` or ```cat ~/.gitconfig```
 
-### Check curent name & email in git config
+## Check name & email 
 ```
 // global
 git config --global user.name 
@@ -58,7 +57,7 @@ git config user.name
 git config user.email
 ```
 
-### Update curent name & email in git config
+## Update name & email
 
 ```
 // global
@@ -70,7 +69,7 @@ git config user.name "yourusername"
 git config user.email "youremail@example.com"
 ```
 
-### Update name & email in a last commit
+## Update name & email in a last commit
 
 ```
 git commit --amend --author="Author Name <email@address.com>"
