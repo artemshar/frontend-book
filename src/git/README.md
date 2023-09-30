@@ -47,28 +47,36 @@ git only garbage collects after about a month or so unless you explicitly tell i
 5. ```git push --force``` if you already pushed commits
 
 
-
-## Check curent name & email in git config
-
-### Global
+### Check curent name & email in git config
 ```
+// global
 git config --global user.name 
 git config --global user.email
-```
 
-### Local
-```
+// Local
 git config user.name
 git config user.email
 ```
 
-## Update name & email in a last commit
+### Update curent name & email in git config
+
+```
+// global
+git config --global user.name "yourusername"
+git config --global user.email "youremail@example.com"
+
+// Local
+git config user.name "yourusername"
+git config user.email "youremail@example.com"
+```
+
+### Update name & email in a last commit
 
 ```
 git commit --amend --author="Author Name <email@address.com>"
 ```
 
-## Alias
+## Aliases
 
 E.g. global, in ```~/.gitconfig``` file:
 ```
@@ -79,4 +87,5 @@ E.g. global, in ```~/.gitconfig``` file:
         br = branch
         logg = log --graph --oneline
         rup = remote update --prune
+        setanotheruserconfig = "!git config user.name \"Your Local Name\" && git config user.email \"your.local.email@example.com\""
 ```
