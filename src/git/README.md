@@ -88,3 +88,8 @@ E.g. global, in ```~/.gitconfig``` file:
         rup = remote update --prune
         setanotheruserconfig = "!git config user.name \"Your Local Name\" && git config user.email \"your.local.email@example.com\""
 ```
+
+## Fix the warning: LF will be replaced by CRLF in <filename> | Windows | VSCode terminal
+```
+git config --global core.autocrlf false
+```
