@@ -60,8 +60,8 @@ module.exports = {
         link: '/git/'
       },
       {
-        text: 'Hacker tips 😃',
-        link: '/hacker/'
+        text: 'OS',
+        link: '/OS/'
       }
     ],
     sidebar: {
@@ -131,9 +131,9 @@ module.exports = {
           ]
         },
       ],
-      '/hacker/': [
+      '/OS/': [
         {
-          title: 'Hacker tips 😃',
+          title: 'OS (Windows/Linux)',
           collapsable: false,
           children: [
             '',
