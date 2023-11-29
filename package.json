@@ -1,5 +1,8 @@
 {
   "name": "frontend_notebook",
+	"engines": {
+		"node":  ">=16.0.0 <17.0.0"
+	},
   "version": "0.0.2",
   "description": "Ths is public notebook about technologies in Software Development, on the subjects of design, computer science, APIs, etc.",
   "main": "index.js",
