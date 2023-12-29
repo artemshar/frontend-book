@@ -34,3 +34,14 @@ replace port_number with the number of the port you want to check.
 * Click on "View" in the menu bar and select "Columns."
 * Check "PID (Process Identifier)" to display the PID column.
 * Look for the PID identified in the netstat command. This will show you the program associated with that PID.
+
+
+
+## How to configure server Timezone (Linux)
+
+```sudo dpkg-reconfigure tzdata```
+
+
+## How to create a new user (Linux)
+
+```sudo adduser [username]```
