@@ -51,5 +51,8 @@ replace port_number with the number of the port you want to check.
 
 ```man date```
 
+## Restart a service on Linux system
 
+```sudo systemctl restart [service_name]```
+e.g. ```sudo systemctl restart nginx```
 
