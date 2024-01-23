@@ -1,6 +1,6 @@
 # Operation Systems (Windows / Linux / WSL)
 
-## Get the IP address by using PowerShell
+## Get local IP addresses by using PowerShell
 ``` PowerShell
 Get-NetIPAddress -AddressFamily IPV4
 ```
@@ -56,3 +56,13 @@ replace port_number with the number of the port you want to check.
 ```sudo systemctl restart [service_name]```
 e.g. ```sudo systemctl restart nginx```
 
+
+## Find your public IP address
+
+```bash
+curl icanhazip.com
+# or
+wget -qO- icanhazip.com
+```
+
+- ifconfig.me
