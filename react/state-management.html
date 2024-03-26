@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>State management | frontend_notebook</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="Ths is public notebook about technologies in Software Development, on the subjects of design, computer science, APIs, etc.">
+    <meta name="theme-color" content="#ededed">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/frontend-book/assets/css/0.styles.40d3819f.css" as="style"><link rel="preload" href="/frontend-book/assets/js/app.657ec9c8.js" as="script"><link rel="preload" href="/frontend-book/assets/js/2.9f62ab7b.js" as="script"><link rel="preload" href="/frontend-book/assets/js/1.75fa505f.js" as="script"><link rel="preload" href="/frontend-book/assets/js/47.1f265c86.js" as="script"><link rel="prefetch" href="/frontend-book/assets/js/10.e50381c0.js"><link rel="prefetch" href="/frontend-book/assets/js/11.b53863a9.js"><link rel="prefetch" href="/frontend-book/assets/js/12.7f213314.js"><link rel="prefetch" href="/frontend-book/assets/js/13.7b51fd11.js"><link rel="prefetch" href="/frontend-book/assets/js/14.9da8beef.js"><link rel="prefetch" href="/frontend-book/assets/js/15.ee7a0271.js"><link rel="prefetch" href="/frontend-book/assets/js/16.2edb1f94.js"><link rel="prefetch" href="/frontend-book/assets/js/17.59b3d43c.js"><link rel="prefetch" href="/frontend-book/assets/js/18.c79031fc.js"><link rel="prefetch" href="/frontend-book/assets/js/19.2299b1be.js"><link rel="prefetch" href="/frontend-book/assets/js/20.dd2299aa.js"><link rel="prefetch" href="/frontend-book/assets/js/21.0ad06a5c.js"><link rel="prefetch" href="/frontend-book/assets/js/22.f0264e33.js"><link rel="prefetch" href="/frontend-book/assets/js/23.92e7ff5d.js"><link rel="prefetch" href="/frontend-book/assets/js/24.9adbdcae.js"><link rel="prefetch" href="/frontend-book/assets/js/25.b025529b.js"><link rel="prefetch" href="/frontend-book/assets/js/26.319153fa.js"><link rel="prefetch" href="/frontend-book/assets/js/27.5e11c8be.js"><link rel="prefetch" href="/frontend-book/assets/js/28.dfa4bf19.js"><link rel="prefetch" href="/frontend-book/assets/js/29.d0e24a85.js"><link rel="prefetch" href="/frontend-book/assets/js/3.10b8e9d3.js"><link rel="prefetch" href="/frontend-book/assets/js/30.b2585751.js"><link rel="prefetch" href="/frontend-book/assets/js/31.67c8196b.js"><link rel="prefetch" href="/frontend-book/assets/js/32.17c5feb0.js"><link rel="prefetch" href="/frontend-book/assets/js/33.1440742e.js"><link rel="prefetch" href="/frontend-book/assets/js/34.cd87d2c4.js"><link rel="prefetch" href="/frontend-book/assets/js/35.1a97d8a2.js"><link rel="prefetch" href="/frontend-book/assets/js/36.b64f6818.js"><link rel="prefetch" href="/frontend-book/assets/js/37.3a29e88b.js"><link rel="prefetch" href="/frontend-book/assets/js/38.06451880.js"><link rel="prefetch" href="/frontend-book/assets/js/39.1fc4d132.js"><link rel="prefetch" href="/frontend-book/assets/js/4.799b13c5.js"><link rel="prefetch" href="/frontend-book/assets/js/40.34c13b02.js"><link rel="prefetch" href="/frontend-book/assets/js/41.720f8328.js"><link rel="prefetch" href="/frontend-book/assets/js/42.5fc73952.js"><link rel="prefetch" href="/frontend-book/assets/js/43.b449c762.js"><link rel="prefetch" href="/frontend-book/assets/js/44.14c4d266.js"><link rel="prefetch" href="/frontend-book/assets/js/45.590edb03.js"><link rel="prefetch" href="/frontend-book/assets/js/46.74588ee9.js"><link rel="prefetch" href="/frontend-book/assets/js/48.bf1bc2c5.js"><link rel="prefetch" href="/frontend-book/assets/js/5.72c9b61b.js"><link rel="prefetch" href="/frontend-book/assets/js/6.ea3a4d0c.js"><link rel="prefetch" href="/frontend-book/assets/js/7.3acf3203.js"><link rel="prefetch" href="/frontend-book/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/frontend-book/assets/css/0.styles.40d3819f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/frontend-book/" class="home-link router-link-active"><!----> <span class="site-name">frontend_notebook</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend-book/frontend/" class="nav-link">
+  Front-End
+</a></div><div class="nav-item"><a href="/frontend-book/CS/" class="nav-link">
+  CS
+</a></div><div class="nav-item"><a href="/frontend-book/design/" class="nav-link">
+  Design, UX/UI
+</a></div><div class="nav-item"><a href="/frontend-book/javascript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/frontend-book/react/" class="nav-link router-link-active">
+  React
+</a></div><div class="nav-item"><a href="/frontend-book/git/" class="nav-link">
+  GIT
+</a></div><div class="nav-item"><a href="/frontend-book/OS/" class="nav-link">
+  OS
+</a></div> <a href="https://github.com/artemshar/frontend-book" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend-book/frontend/" class="nav-link">
+  Front-End
+</a></div><div class="nav-item"><a href="/frontend-book/CS/" class="nav-link">
+  CS
+</a></div><div class="nav-item"><a href="/frontend-book/design/" class="nav-link">
+  Design, UX/UI
+</a></div><div class="nav-item"><a href="/frontend-book/javascript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/frontend-book/react/" class="nav-link router-link-active">
+  React
+</a></div><div class="nav-item"><a href="/frontend-book/git/" class="nav-link">
+  GIT
+</a></div><div class="nav-item"><a href="/frontend-book/OS/" class="nav-link">
+  OS
+</a></div> <a href="https://github.com/artemshar/frontend-book" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>React</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend-book/react/" aria-current="page" class="sidebar-link">Summary of the React</a></li><li><a href="/frontend-book/react/common.html" class="sidebar-link">Writing React components</a></li><li><a href="/frontend-book/react/ui-libs.html" class="sidebar-link">UI libs &amp; components</a></li><li><a href="/frontend-book/react/state-management.html" aria-current="page" class="active sidebar-link">State management</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-book/react/state-management.html#redux" class="sidebar-link">Redux</a></li><li class="sidebar-sub-header"><a href="/frontend-book/react/state-management.html#context-api" class="sidebar-link">Context API</a></li></ul></li><li><a href="/frontend-book/react/hooks.html" class="sidebar-link">Hooks</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="state-management"><a href="#state-management" class="header-anchor">#</a> State management</h1> <h2 id="redux"><a href="#redux" class="header-anchor">#</a> Redux</h2> <h4 id="concepts"><a href="#concepts" class="header-anchor">#</a> Concepts</h4> <ol><li><strong>Actions</strong></li></ol> <p>An action sends data from your application to the Redux store. An action is conventionally an object with two properties: type and (optional) payload. The type is generally an uppercase string (assigned to a constant) that describes the action. The payload is additional data that may be passed.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Action Type</span>
+<span class="token keyword">const</span> <span class="token constant">DELETE_TODO</span> <span class="token operator">=</span> <span class="token string">'DELETE_TODO'</span>
+</code></pre></div><p>Action creator is a function that returns an <strong>action</strong>.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">deleteTodo</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Action</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token constant">DELETE_TODO</span><span class="token punctuation">,</span> 
+    <span class="token literal-property property">payload</span><span class="token operator">:</span> id
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="2"><li><strong>Reducers</strong></li></ol> <p>A reducer is a function that takes two parameters: state and action. A reducer is immutable and always returns a copy of the entire state. A reducer typically consists of a switch statement that goes through all the possible action types.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> initialState <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">todos</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'Eat'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'Sleep'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">loading</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">hasErrors</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">todoReducer</span><span class="token punctuation">(</span><span class="token parameter">state <span class="token operator">=</span> initialState<span class="token punctuation">,</span> action</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>action<span class="token punctuation">.</span>type<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token constant">DELETE_TODO</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>state<span class="token punctuation">,</span>
+        <span class="token literal-property property">todos</span><span class="token operator">:</span> state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">todo</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> todo<span class="token punctuation">.</span>id <span class="token operator">!==</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> state
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="3"><li><strong>Store</strong></li></ol> <p>The Redux application state lives in the store, which is initialized with a reducer. When used with React, a <Provider> exists to wrap the application, and anything within the Provider can have access to Redux.</Provider></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>createStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'redux'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Provider<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-redux'</span>
+<span class="token keyword">import</span> reducer <span class="token keyword">from</span> <span class="token string">'./reducers'</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span>reducer<span class="token punctuation">)</span>
+
+<span class="token function">render</span><span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>Provider store<span class="token operator">=</span><span class="token punctuation">{</span>store<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>Provider<span class="token operator">&gt;</span><span class="token punctuation">,</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre></div><ol start="4"><li><strong>Dispatch</strong></li></ol> <p>Dispatch is a method available on the store object that accepts an object which is used to update the Redux state. Usually, this object is the result of invoking an action creator.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">Component</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>dispatch<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token function">deleteTodo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>dispatch<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="5"><li><strong>Connect</strong></li></ol> <p>The <code>connect()</code> function is one typical way to connect React to Redux. A connected component is sometimes referred to as a container.</p> <p><strong>Links</strong>:</p> <ul><li><a href="https://www.taniarascia.com/redux-react-guide/" target="_blank" rel="noopener noreferrer">Redux Tutorial: An Overview and Walkthrough<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="context-api"><a href="#context-api" class="header-anchor">#</a> Context API</h2> <blockquote><p>Context provides a way to pass data through the component tree without having to pass props down manually at every level.</p></blockquote> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code><span class="token comment">// How to create a new context</span>
+<span class="token keyword">const</span> ThemeContext <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createContext</span><span class="token punctuation">(</span><span class="token string">'light'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'light' is default value</span>
+
+<span class="token comment">// How to use</span>
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Use a Provider to pass the current theme to the tree below.</span>
+    <span class="token comment">// Any component can read it, no matter how deep it is.</span>
+    <span class="token comment">// In this example, we're passing &quot;dark&quot; as the current value.</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>ThemeContext<span class="token punctuation">.</span>Provider value<span class="token operator">=</span><span class="token string">&quot;dark&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Toolbar <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>ThemeContext<span class="token punctuation">.</span>Provider<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// A component in the middle doesn't have to</span>
+<span class="token comment">// pass the theme down explicitly anymore.</span>
+<span class="token keyword">function</span> <span class="token function">Toolbar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>ThemedButton <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ThemedButton</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Assign a contextType to read the current theme context.</span>
+  <span class="token comment">// React will find the closest theme Provider above and use its value.</span>
+  <span class="token comment">// In this example, the current theme is &quot;dark&quot;.</span>
+  <span class="token keyword">static</span> contextType <span class="token operator">=</span> ThemeContext<span class="token punctuation">;</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>Button theme<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>context<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p><strong>Links</strong>:</p> <ul><li><a href="https://reactjs.org/docs/context.html" target="_blank" rel="noopener noreferrer">reactjs.org/docs/context.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.taniarascia.com/using-context-api-in-react/" target="_blank" rel="noopener noreferrer">Using Context API in React (Hooks and Classes)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/artemshar/frontend-book/edit/master/src/react/state-management.md" target="_blank" rel="noopener noreferrer">Edit</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/25/2021, 9:56:28 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend-book/react/ui-libs.html" class="prev">
+        UI libs &amp; components
+      </a></span> <span class="next"><a href="/frontend-book/react/hooks.html">
+        Hooks
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/frontend-book/assets/js/app.657ec9c8.js" defer></script><script src="/frontend-book/assets/js/2.9f62ab7b.js" defer></script><script src="/frontend-book/assets/js/1.75fa505f.js" defer></script><script src="/frontend-book/assets/js/47.1f265c86.js" defer></script>
+  </body>
+</html>
